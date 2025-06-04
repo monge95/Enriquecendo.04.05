@@ -1,5 +1,7 @@
 body {
     background-color: #fdfdfd8f;
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -9,9 +11,8 @@ a {
 
 /* Header */
 #titolo {
-    line-height: 10px;
+    line-height: 1.5;
     font-family: comic;
-    /* mostra o tipo de fonte  */
     text-align: center;
     color: #1179a1;
 }
@@ -20,11 +21,8 @@ nav {
     background-color: #6eb4cf38;
     height: 70px;
     display: flex;
-    /* Torna o nav um contêiner flexível */
     justify-content: center;
-    /* Centraliza os itens horizontalmente */
     align-items: center;
-    /* Centraliza os itens verticalmente */
 }
 
 nav>a {
@@ -33,7 +31,6 @@ nav>a {
     text-decoration: none;
     font-family: "Open Sans", sans-serif;
     margin: 0 15px;
-    /* Espaçamento horizontal entre os links */
     transition: 0.5s;
 }
 
@@ -45,31 +42,16 @@ nav>a:hover {
 
 nav a:first-child {
     font-size: 24px;
-    /* Aumenta o tamanho do ícone */
     color: #000000;
-    /* Define a cor do ícone */
     margin-right: 10px;
-    /* Dá um pouco de espaço após o ícone */
-    text-decoration: none;
-    /* Remove sublinhado */
 }
 
-nav a:first-child:hover {
-    color: #1179a1;
-    /* Altera a cor ao passar o mouse */
-}
-
-
-
-/* index abaixo  */
-/* span é pára marcarsoi diretas no texto como por ex mudar a cor de uma palavra expesifica  */
 span {
     color: red;
 }
 
-#artigo1 {
+#artigo1, #artigo2 {
     background-color: #1178a100;
-    position: static;
     margin-left: 20%;
     margin-right: 20%;
     margin-top: 60px;
@@ -88,22 +70,6 @@ span {
     font-size: 17px;
 }
 
-#artigo2 {
-    background-color: #1178a100;
-    position: static;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 60px;
-    border-radius: 100px;
-    border-color: #1179a1;
-    border: solid 1px;
-    box-shadow: 5px 5px 5px 3px #1179a1;
-    text-align: justify;
-    padding: 40px 40px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-}
-
 #alexandre {
     width: 60%;
     margin: auto;
@@ -112,116 +78,40 @@ span {
 
 .titolo {
     font-family: comic;
-    /* mostra o tipo de fonte  */
     text-align: center;
     color: #1179a1;
 }
 
-
-
-/* pag sobre as musicas abaixo  */
-
+/* página sobre as músicas */
 #interno2 {
     background-color: #0065a8;
     color: #1179a1;
     position: fixed;
     margin-right: 80%;
-    margin-left: 0px;
+    margin-left: 2%;
     text-align: center;
     margin-top: -100px;
     padding-top: 3%;
     padding-bottom: 5%;
-    width: 300px;
+    width: 20%;
     font-size: 24px;
 }
 
-#v1 {
-    background-color: #000000;
+#v1, #v2, #v3, #v4, #v5, #v6 {
+    background-color: #ffffff00;
     position: static;
-    margin-left: 20%;
-    margin-right: 50%;
-    margin-top: 3%;
-    height: 400px;
+    margin-left: 30%;
+    margin-top: 4%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: #ffffff;
     text-align: end;
-    text-align: right;
-}
-
-#v2 {
-    background-color: #000000;
-    position: static;
-    margin-left: 65%;
-    margin-right: 5%;
-    margin-top: -400px;
+    padding: 10px;
+    width: 40%;
     height: 400px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: #ffffff;
-    text-align: end;
-    text-align: right;
 }
 
-#v3 {
-    background-color: #000000;
-    position: static;
-    margin-left: 20%;
-    margin-right: 50%;
-    margin-top: 3%;
-    height: 400px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: #ffffff;
-    text-align: end;
-    text-align: right;
-}
-
-#v4 {
-    background-color: #000000;
-    position: static;
-    margin-left: 65%;
-    margin-right: 5%;
-    margin-top: -400px;
-    height: 400px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: #ffffff;
-    text-align: end;
-    text-align: right;
-}
-
-#v5 {
-    background-color: #000000;
-    position: static;
-    margin-left: 20%;
-    margin-right: 50%;
-    margin-top: 3%;
-    height: 400px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: #ffffff;
-    text-align: end;
-    text-align: right;
-}
-
-#v6 {
-    background-color: #000000;
-    position: static;
-    margin-left: 65%;
-    margin-right: 5%;
-    margin-top: -400px;
-    height: 400px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    color: #ffffff;
-    text-align: end;
-    text-align: right;
-}
-
-
-/* pagina sobre a banda abaixo */
-
+/* página sobre a banda */
 
 #interno3 {
     background-color: #0065a8;
@@ -237,10 +127,8 @@ span {
     font-size: 24px;
 }
 
-
-#banda {
+#banda, #Champignon, #RenatoPelado, #Marcão, #Thiago {
     background-color: #1178a100;
-    position: static;
     margin-left: 40%;
     margin-right: 20%;
     margin-top: 60px;
@@ -252,58 +140,30 @@ span {
     font-size: 20px;
 }
 
-#Champignon {
-    background-color: #1178a100;
-    position: static;
-    margin-left: 40%;
-    margin-right: 20%;
-    margin-top: 60px;
-    border-radius: 100px;
-    border-color: #1179a1;
-    text-align: justify;
-    padding: 40px 40px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-}
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
 
-#RenatoPelado {
-    background-color: #1178a100;
-    position: static;
-    margin-left: 40%;
-    margin-right: 20%;
-    margin-top: 60px;
-    border-radius: 100px;
-    border-color: #1179a1;
-    text-align: justify;
-    padding: 40px 40px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-}
+    nav>a {
+        font-size: 24px;
+        margin: 10px 0;
+    }
 
-#Marcão {
-    background-color: #1178a100;
-    position: static;
-    margin-left: 40%;
-    margin-right: 20%;
-    margin-top: 60px;
-    border-radius: 100px;
-    border-color: #1179a1;
-    text-align: justify;
-    padding: 40px 40px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-}
+    #artigo1, #artigo2, #banda, #Champignon, #RenatoPelado, #Marcão, #Thiago {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 
-#Thiago {
-    background-color: #1178a100;
-    position: static;
-    margin-left: 40%;
-    margin-right: 20%;
-    margin-top: 60px;
-    border-radius: 100px;
-    border-color: #1179a1;
-    text-align: justify;
-    padding: 40px 40px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
+    #interno2, #interno3 {
+        position: static;
+        width: 100%;
+        margin: 10px;
+        padding: 10px;
+    }
+
+    #v1, #v2, #v3, #v4, #v5, #v6 {
+        width: 90%;
+    }
 }
