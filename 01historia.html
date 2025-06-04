@@ -5,23 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>historia</title>
-    <!-- lik css  -->
+        <!-- lik css  -->
     <link rel="stylesheet" href="style.css">
-    <!-- link da caisinha para voltar a pag principal -->
+        <!-- link da caisinha para voltar a pag principal -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <!-- garante que o conteúdo seja dimensionado corretamente em dispositivos móveis. -->
+        <!-- biblioteca que fornece fontes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/fontawesome.min.css">
+        <!-- garante que o conteúdo seja dimensionado corretamente em dispositivos móveis. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- css para o modo escuro -->
-    <link rel="stylesheet" href="dark.css">
-    <!-- link script para o modo escuro -->
-    <link rel="stylesheet" href="dark.js">
+    
 
-    <!-- começo do header -->
+        <!-- começo do header -->
     
 </head>
 
 <body>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+  <button id="dark-mode-toggle">
+        <span id="icon">🌞</span>
+    </button>
+    <!-- puxa o arquivo js  -->
+    <script src="dark.js"></script>
+
     <header>
         
         <br>
@@ -99,9 +103,6 @@
             </div>
 
     </article>
-
-
-
 
 
 </body>

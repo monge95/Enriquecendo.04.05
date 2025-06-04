@@ -6,7 +6,7 @@ body {
 
 a {
     text-decoration: none;
-    color: #8cb4c4;
+    color: #00b7ff;
 }
 
 /* Header */
@@ -14,11 +14,10 @@ a {
     line-height: 1.5;
     font-family: comic;
     text-align: center;
-    color: #1179a1;
+    color: #7ccfff;
 }
 
 nav {
-    background-color: #6eb4cf38;
     height: 70px;
     display: flex;
     justify-content: center;
@@ -47,7 +46,7 @@ nav a:first-child {
 }
 
 span {
-    color: red;
+    color: rgb(255, 0, 0);
 }
 
 #artigo1, #artigo2 {
@@ -83,9 +82,24 @@ span {
 }
 
 /* página sobre as músicas */
+
+ .musicas{
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15%;
+}
+#titolo {
+    line-height: 1.5;
+    font-family: comic;
+    text-align: center;
+    color: #41b4f7;
+    margin-left: 15%;
+}
+
 #interno2 {
     background-color: #0065a8;
-    color: #1179a1;
     position: fixed;
     margin-right: 80%;
     margin-left: 2%;
@@ -104,21 +118,30 @@ span {
     margin-top: 4%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
-    color: #ffffff;
+    color: #000000;
     text-align: end;
     padding: 10px;
     width: 40%;
     height: 400px;
 }
 
+
 /* página sobre a banda */
+.banda {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 18%;
+    margin-top: -3.5%;
+}
 
 #interno3 {
     background-color: #0065a8;
-    color: #1179a1;
+    color: #000000;
     position: fixed;
     margin-right: 80%;
-    margin-left: -65px;
+    margin-left: 0%;
     text-align: center;
     margin-top: 630px;
     padding-top: 3%;
@@ -166,4 +189,58 @@ span {
     #v1, #v2, #v3, #v4, #v5, #v6 {
         width: 90%;
     }
+}
+
+/* faz o modo escuro */
+
+body {
+    background-color: white;
+    color: black;
+    transition: background-color 1.3s, color 1.3s;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+
+}
+body.dark-mode span {
+    color: rgb(17, 0, 255);
+}
+
+body.dark-mode nav{
+    background-color: #01005046;
+}
+
+body.dark-mode nav a:first-child {
+    font-size: 24px;
+    color: #0c16ac;
+    margin-right: 10px;
+}
+
+/* pagina das musicas  */
+
+body.dark-mode #v1 #v2 #v3 #v4 #v5 #v6 {
+    background-color: #ffffff00;
+    position: static;
+    margin-left: 30%;
+    margin-top: 4%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(17, 0, 255);
+    text-align: end;
+    padding: 10px;
+    width: 40%;
+    height: 400px;
+}
+
+
+#dark-mode-toggle {
+    position: fixed;
+    top: 2%;
+    right: 10%;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 250%;
 }
